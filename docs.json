@@ -89,8 +89,8 @@
     }
   },
   "logo": {
-    "light": "/images/hero-light.png",
-    "dark": "/images/hero-dark.png"
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
   },
   "navbar": {
     "links": [
