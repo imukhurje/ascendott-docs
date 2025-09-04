@@ -1,7 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "AscendOTT Docs",
+  "description": "Documentation for AscendOTT",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
