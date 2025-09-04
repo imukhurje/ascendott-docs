@@ -1,8 +1,8 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "OpenAPI Plant Store",
-    "description": "A sample API that uses a plant store as an example to demonstrate features in the OpenAPI specification",
+    "title": "AscendOTT Aggregator Plans API",
+    "description": "API description for aggregators to interact with AscendOTT Sites",
     "license": {
       "name": "MIT"
     },
@@ -10,7 +10,7 @@
   },
   "servers": [
     {
-      "url": "http://sandbox.mintlify.com"
+      "url": "http://<admin_prefix>.ascnedott.com/api/v1/aggregator"
     }
   ],
   "security": [
@@ -21,7 +21,7 @@
   "paths": {
     "/plants": {
       "get": {
-        "description": "Returns all plants from the system that the user has access to",
+        "description": "Returns all plans from the system that the user has access to",
         "parameters": [
           {
             "name": "limit",
