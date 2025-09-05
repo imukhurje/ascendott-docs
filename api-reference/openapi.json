@@ -2,7 +2,7 @@
   "openapi": "3.0.3",
   "info": {
     "title": "AscendOTT Aggregator Plans API",
-    "description": "API description for aggregators to interact with AscendOTT Sites. When you use the curl command, remember to replace yourdomain.com in the url with the correct OTT domain you are trying to access.",
+    "description": "API description for aggregators to interact with AscendOTT Sites. ",
     "version": "1.0.0",
     "license": { "name": "MIT" }
   },
@@ -16,7 +16,7 @@
     "/plans": {
       "get": {
         "summary": "List of plans",
-        "description": "Returns all plans from the system that the caller can access.",
+        "description": "Returns all plans from the system that you can access. When you use the curl command, remember to replace yourdomain.com in the url with the correct OTT domain you are trying to access.",
         "parameters": [
           {
             "name": "limit",
