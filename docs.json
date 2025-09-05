@@ -42,7 +42,7 @@
           },
           {
             "group": "Aggregator Endpoints (Reference)",
-            "openapi": "openapi/openapi.json"
+            "openapi": "api-reference/openapi.json"
           }
         ]
       }
