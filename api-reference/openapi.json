@@ -2,12 +2,25 @@
   "openapi": "3.0.3",
   "info": {
     "title": "AscendOTT Aggregator Plans API",
-    "description": "API description for aggregators to interact with AscendOTT Sites. ",
+    "description": "API description for aggregators to interact with AscendOTT Sites",
     "version": "1.0.0",
     "license": { "name": "MIT" }
   },
   "servers": [
-    { "url": "https://api.yourdomain.com/api/v1/aggregator" }
+    {
+      "url": "{scheme}://{domain}/api/v1/aggregator",
+      "variables": {
+        "scheme": {
+          "enum": ["https", "http"],
+          "default": "https",
+          "description": "Protocol"
+        },
+        "domain": {
+          "default": "api.example.com",
+          "description": "Client API host (e.g., api.client.com)"
+        }
+      }
+    }
   ],
   "security": [
     { "ApiKeyAuth": [] }
@@ -16,7 +29,7 @@
     "/plans": {
       "get": {
         "summary": "List of plans",
-        "description": "Returns all plans from the system that you can access. When you use the curl command, remember to replace yourdomain.com in the url with the correct OTT domain you are trying to access.",
+        "description": "Returns all plans from the system that the caller can access.",
         "parameters": [
           {
             "name": "limit",
@@ -33,6 +46,39 @@
                 "schema": {
                   "type": "array",
                   "items": { "$ref": "#/components/schemas/Plan" }
+                },
+                "examples": {
+                  "success": {
+                    "value": [
+                      {
+                        "planCode": "68b74fd80e51671c21e46913",
+                        "planTitle": "Standard",
+                        "planType": "svod",
+                        "description": "This is an invisible plan for Airtel",
+                        "identifier": "airtel_6months_399",
+                        "billingFrequency": {
+                          "value": "months",
+                          "is_recurring": false,
+                          "multiplier": "1",
+                          "_id": "68b74fd80e51671c21e46914"
+                        },
+                        "canDownload": false,
+                        "startDate": "2025-09-03",
+                        "endDate": null,
+                        "noEndDate": true,
+                        "contentIds": [
+                          "66fb907f70381480c75da8cc",
+                          "66fb9b8970381480c75daaa3",
+                          "66fba41d70381480c75dabfc",
+                          "66fbaa6370381480c75dacfc",
+                          "66fbb8af70381480c75daf52"
+                        ],
+                        "countries": [
+                          { "countryCode": "IN", "costPerBilling": "399" }
+                        ]
+                      }
+                    ]
+                  }
                 }
               }
             }
@@ -54,37 +100,9 @@
             "content": {
               "application/json": {
                 "schema": { "$ref": "#/components/schemas/Error" },
-                "examples": { "error": { "value": { "error": "Internal Server Error" } } }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "summary": "Create plan",
-        "description": "Creates a new plan in the OTT.",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": { "$ref": "#/components/schemas/NewPlan" }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Plan response",
-            "content": {
-              "application/json": {
-                "schema": { "$ref": "#/components/schemas/Plan" }
-              }
-            }
-          },
-          "400": {
-            "description": "Unexpected error",
-            "content": {
-              "application/json": {
-                "schema": { "$ref": "#/components/schemas/Error" }
+                "examples": {
+                  "error": { "value": { "error": "Internal Server Error" } }
+                }
               }
             }
           }
@@ -99,31 +117,47 @@
     "schemas": {
       "Plan": {
         "type": "object",
-        "required": ["name"],
         "properties": {
-          "name": { "type": "string", "description": "The name of the plan" },
-          "tag":  { "type": "string", "description": "Tag to specify the type" }
-        }
-      },
-      "NewPlan": {
-        "allOf": [
-          { "$ref": "#/components/schemas/Plan" },
-          {
+          "planCode": { "type": "string" },
+          "planTitle": { "type": "string" },
+          "planType": { "type": "string" },
+          "description": { "type": "string", "nullable": true },
+          "identifier": { "type": "string" },
+          "billingFrequency": {
             "type": "object",
-            "required": ["id"],
             "properties": {
-              "id": { "type": "string", "description": "Identification number of the plan" }
+              "value": { "type": "string" },
+              "is_recurring": { "type": "boolean" },
+              "multiplier": { "type": "string" },
+              "_id": { "type": "string" }
+            }
+          },
+          "canDownload": { "type": "boolean" },
+          "startDate": { "type": "string", "format": "date" },
+          "endDate": { "type": "string", "format": "date", "nullable": true },
+          "noEndDate": { "type": "boolean" },
+          "contentIds": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "countries": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "countryCode": { "type": "string" },
+                "costPerBilling": { "type": "string" }
+              }
             }
           }
-        ]
+        }
       },
       "Error": {
         "type": "object",
-        "required": ["error", "message"],
         "properties": {
-          "error":   { "type": "integer", "format": "int32" },
-          "message": { "type": "string" }
-        }
+          "error": { "type": "string" }
+        },
+        "required": ["error"]
       }
     }
   }
