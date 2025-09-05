@@ -10,7 +10,7 @@
   },
   "servers": [
     {
-      "url": "http://<admin_prefix>.ascnedott.com/api/v1/aggregator"
+      "url": "http://<admin_url>/api/v1/aggregator"
     }
   ],
   "security": [
@@ -19,7 +19,7 @@
     }
   ],
   "paths": {
-    "/plants": {
+    "/plant": {
       "get": {
         "description": "Returns all plans from the system that the user has access to",
         "parameters": [
@@ -35,13 +35,13 @@
         ],
         "responses": {
           "200": {
-            "description": "Plant response",
+            "description": "Plans response",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Plant"
+                    "$ref": "#/components/schemas/Plan"
                   }
                 }
               }
