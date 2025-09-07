@@ -118,6 +118,131 @@
     },
 
     "/subscriptions": {
+      "get": {
+        "tags": ["Subscriptions"],
+        "summary": "List Subscriptions",
+        "description": "Returns subscriptions. Without query params, returns all accessible subscriptions. With `externalUserId`, returns that user's subscriptions. With `subscriptionId`, returns a single subscription.",
+        "parameters": [
+          {
+            "name": "externalUserId",
+            "in": "query",
+            "description": "Filter by aggregator's user identifier. If provided (and `subscriptionId` is not), the response is an array.",
+            "schema": { "type": "string" }
+          },
+          {
+            "name": "subscriptionId",
+            "in": "query",
+            "description": "Returns a single subscription by its ID. If provided, it takes precedence over `externalUserId`.",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "items": { "$ref": "#/components/schemas/Subscription" }
+                    },
+                    { "$ref": "#/components/schemas/Subscription" }
+                  ]
+                },
+                "examples": {
+                  "all": {
+                    "summary": "No query string (array of subscriptions)",
+                    "value": [
+                      {
+                        "subscriptionId": "68bbe3343faf938adbc22ba8",
+                        "externalUserId": "abcd123",
+                        "planCode": "68b74fd80e51671c21e46913",
+                        "startDate": "2025-09-06T07:31:00.000Z",
+                        "endDate": "2025-10-06T07:31:00.000Z",
+                        "device": "android_phone",
+                        "status": "completed"
+                      },
+                      {
+                        "subscriptionId": "68bbe61d3faf938adbc22bb6",
+                        "externalUserId": "efgh123",
+                        "planCode": "68b74fd80e51671c21e46913",
+                        "startDate": "2025-09-03T11:30:00.000Z",
+                        "endDate": "2025-12-02T11:30:00.000Z",
+                        "device": "jio_stb",
+                        "status": "completed"
+                      }
+                    ]
+                  },
+                  "byExternalUserId": {
+                    "summary": "Filtered by externalUserId (array of subscriptions)",
+                    "value": [
+                      {
+                        "subscriptionId": "68bc1ec13faf938adbc22bd2",
+                        "externalUserId": "ijkl123",
+                        "planCode": "68b74fd80e51671c21e46913",
+                        "startDate": "2025-09-03T11:30:00.000Z",
+                        "endDate": "2025-12-02T11:30:00.000Z",
+                        "device": "jio_stb",
+                        "status": "completed"
+                      }
+                    ]
+                  },
+                  "bySubscriptionId": {
+                    "summary": "Filtered by subscriptionId (single subscription object)",
+                    "value": {
+                      "subscriptionId": "68bbe3343faf938adbc22ba8",
+                      "externalUserId": "abcd123",
+                      "planCode": "68b74fd80e51671c21e46913",
+                      "startDate": "2025-09-06T07:31:00.000Z",
+                      "endDate": "2025-10-06T07:31:00.000Z",
+                      "device": "android_phone",
+                      "status": "completed"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden — missing or invalid API key",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" },
+                "examples": {
+                  "missing":   { "value": { "error": "x-api-key missing" } },
+                  "incorrect": { "value": { "error": "x-api-key is incorrect" } }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found — subscriptionId not found",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" },
+                "examples": {
+                  "notFound": { "value": { "error": "subscriptionId not found" } }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" },
+                "examples": {
+                  "error": { "value": { "error": "Internal Server Error" } }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          { "ApiKeyAuth": [] }
+        ]
+      },
       "post": {
         "tags": ["Subscriptions"],
         "summary": "Create Subscription",
@@ -162,6 +287,7 @@
                       "planCode": "configuredPlanCode",
                       "startDate": "2020-09-04T11:23:42.958Z",
                       "endDate": "2020-10-04T11:22:23.958Z",
+                      "device": "android_phone",
                       "status": "completed"
                     }
                   }
@@ -299,6 +425,7 @@
               "roku",
               "fire_tv",
               "apple_tv",
+              "jio_stb",
               "other"
             ]
           }
@@ -314,6 +441,23 @@
           "planCode": { "type": "string" },
           "startDate": { "type": "string", "format": "date-time" },
           "endDate": { "type": "string", "format": "date-time" },
+          "device": {
+            "type": "string",
+            "enum": [
+              "web_browser",
+              "android_phone",
+              "ios_phone",
+              "android_tablet",
+              "ios_tablet",
+              "android_tv",
+              "smart_tv",
+              "roku",
+              "fire_tv",
+              "apple_tv",
+              "jio_stb",
+              "other"
+            ]
+          },
           "status": { "type": "string", "enum": ["completed", "pending", "cancelled", "expired"] }
         }
       },
