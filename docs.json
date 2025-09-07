@@ -42,12 +42,6 @@
             ]
           },
           {
-            "group": "Aggregator Endpoints",
-            "pages": [
-              "api-reference/endpoint/plans"
-            ]
-          },
-          {
             "group": "Plans",
             "openapi": "api-reference/openapi.json"
           }

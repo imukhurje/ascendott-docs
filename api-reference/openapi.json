@@ -16,7 +16,7 @@
           "description": "Protocol"
         },
         "domain": {
-          "default": "admin.example.com",
+          "default": "api.example.com",
           "description": "Client API host (e.g., api.client.com)"
         }
       }
@@ -25,9 +25,16 @@
   "security": [
     { "ApiKeyAuth": [] }
   ],
+
+  "tags": [
+    { "name": "Plans" },
+    { "name": "Subscriptions" }
+  ],
+
   "paths": {
     "/plans": {
       "get": {
+        "tags": ["Plans"],
         "summary": "List of plans",
         "description": "Returns all plans from the system that the caller can access.",
         "parameters": [
@@ -54,8 +61,8 @@
                         "planCode": "68b74fd80e51671c21e46913",
                         "planTitle": "Standard",
                         "planType": "svod",
-                        "description": "This is an invisible plan for Aggre Gator Ltd.",
-                        "identifier": "aggregator_6months_399",
+                        "description": "This is an invisible plan for Airtel",
+                        "identifier": "airtel_6months_399",
                         "billingFrequency": {
                           "value": "months",
                           "is_recurring": false,
@@ -109,8 +116,10 @@
         }
       }
     },
+
     "/subscriptions": {
       "post": {
+        "tags": ["Subscriptions"],
         "summary": "Create Subscription",
         "description": "Creates a new subscription for a user against a given plan.",
         "requestBody": {
@@ -219,11 +228,11 @@
         },
         "security": [
           { "ApiKeyAuth": [] }
-        ],
-        "tags": ["Subscriptions"]
+        ]
       }
     }
   },
+
   "components": {
     "securitySchemes": {
       "ApiKeyAuth": { "type": "apiKey", "in": "header", "name": "x-api-key" }
@@ -266,28 +275,15 @@
           }
         }
       },
+
       "SubscriptionCreateRequest": {
         "type": "object",
         "required": ["externalUserId", "planCode"],
         "properties": {
-          "externalUserId": {
-            "type": "string",
-            "description": "Aggregator's user identifier (stable across calls)."
-          },
-          "planCode": {
-            "type": "string",
-            "description": "AscendOTT planCode to subscribe to."
-          },
-          "startDate": {
-            "type": "string",
-            "format": "date-time",
-            "description": "UTC ISO8601. Optional. Defaults to current date/time."
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date-time",
-            "description": "UTC ISO8601. Optional. Defaults to plan duration."
-          },
+          "externalUserId": { "type": "string", "description": "Aggregator's user identifier (stable across calls)." },
+          "planCode": { "type": "string", "description": "AscendOTT planCode to subscribe to." },
+          "startDate": { "type": "string", "format": "date-time", "description": "UTC ISO8601. Optional. Defaults to current date/time." },
+          "endDate": { "type": "string", "format": "date-time", "description": "UTC ISO8601. Optional. Defaults to plan duration." },
           "device": {
             "type": "string",
             "description": "Origin device of the purchase. Optional.",
@@ -308,31 +304,27 @@
           }
         }
       },
+
       "Subscription": {
         "type": "object",
+        "required": ["subscriptionId", "externalUserId", "planCode", "startDate", "endDate", "status"],
         "properties": {
           "subscriptionId": { "type": "string" },
           "externalUserId": { "type": "string" },
           "planCode": { "type": "string" },
           "startDate": { "type": "string", "format": "date-time" },
           "endDate": { "type": "string", "format": "date-time" },
-          "status": {
-            "type": "string",
-            "enum": ["completed", "pending", "cancelled", "expired"]
-          }
-        },
-        "required": ["subscriptionId", "externalUserId", "planCode", "startDate", "endDate", "status"]
+          "status": { "type": "string", "enum": ["completed", "pending", "cancelled", "expired"] }
+        }
       },
+
       "Error": {
         "type": "object",
+        "required": ["error"],
         "properties": {
           "error": { "type": "string" }
-        },
-        "required": ["error"]
+        }
       }
     }
-  },
-  "tags": [
-    { "name": "Subscriptions" }
-  ]
+  }
 }
