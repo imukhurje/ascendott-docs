@@ -42,7 +42,7 @@
             ]
           },
           {
-            "group": "Plans",
+            "group": "API Endpoints",
             "openapi": "api-reference/openapi.json"
           }
         ]
