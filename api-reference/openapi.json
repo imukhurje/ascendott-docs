@@ -16,7 +16,7 @@
           "description": "Protocol"
         },
         "domain": {
-          "default": "api.example.com",
+          "default": "admin.example.com",
           "description": "Client API host (e.g., api.client.com)"
         }
       }
@@ -54,8 +54,8 @@
                         "planCode": "68b74fd80e51671c21e46913",
                         "planTitle": "Standard",
                         "planType": "svod",
-                        "description": "This is an invisible plan for Airtel",
-                        "identifier": "airtel_6months_399",
+                        "description": "This is an invisible plan for Aggre Gator Ltd.",
+                        "identifier": "aggregator_6months_399",
                         "billingFrequency": {
                           "value": "months",
                           "is_recurring": false,
