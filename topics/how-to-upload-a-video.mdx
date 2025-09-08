@@ -7,41 +7,63 @@ description: "Upload a video to your AscendOTT site—step-by-step with screensh
 
 <AccordionGroup>
 
-  <Accordion title="Step 1 — Open the Dashboard" icon="layout-dashboard">
-    Go to your site’s admin dashboard and sign in with your credentials.
+  <Accordion title="Upload Content" icon="layout-dashboard">
 
-    ![](/images/topic-upload-video/01-dashboard.png)
+### Uploading Content
+
+To upload a new video, follow these steps:
+
+1. Go to the **Content Management** tab.
+2. Select **Content** from the menu.
+3. Click the **Add Video** icon.
+4. After clicking **Add Video**, you can **drag and drop** the video file or **select files from your local machine**.
+5. **Choose Encoding Resolution(s):** Select one or multiple resolutions (270p, 360p, 480p, 720p, 1080p) for the video to be uploaded.
+   Tick **Encrypted Encoding** to prevent piracy.
+
+**Note:** If the video is a promo or trailer, **do not enable encryption**.
+
   </Accordion>
 
-  <Accordion title="Step 2 — Go to Videos → Upload" icon="file-video">
-    In the left nav, open **Videos**, then click **Upload**. You can drag & drop a file or use the picker.
+  <Accordion title="Built-in HLS Encoder" icon="rocket">
 
-    ![](/images/topic-upload-video/02-upload-page.png)
+### Built-in HLS Encoder
+
+AscendOTT comes with a **built-in HLS encoder**, which eliminates the need for third-party media converters such as **AWS Elemental MediaConvert**.
+
+**Key Benefits:**
+
+- **Integrated Encoding** — No external setup required.
+- **Multiple Resolutions** — Supports 270p, 360p, 480p, 720p, and 1080p.
+- **Encryption Support** — Protect your content by enabling encrypted encoding.
+- **Cost Saving** — Avoids additional expenses from third-party encoding services.
+
+**Result:**
+Your uploaded video is automatically processed into adaptive bitrate streaming formats (HLS) for smooth playback across devices.
+
   </Accordion>
 
-  <Accordion title="Step 3 — Fill in details" icon="edit-3">
-    Add a **Title**, optional **Description**, **Category/Tags**, and choose visibility.
-    These fields help with search and discovery.
+  <Accordion title="Encrypted Content Delivery" icon="lock">
 
-    ![](/images/topic-upload-video/03-metadata.png)
-  </Accordion>
+### Encrypted Content Delivery
 
-  <Accordion title="Step 4 — Encoding & security" icon="lock">
-    Choose the encoding ladder (e.g., 480p/720p) and toggle **Encrypt (AES-128)** if enabled for your tenant.
-    You can upload subtitles and thumbnails here too.
+To ensure content security and prevent piracy, AscendOTT supports **encrypted media encoding and delivery**.
 
-    ![](/images/topic-upload-video/04-encoding-security.png)
-  </Accordion>
+**Key Features:**
 
-  <Accordion title="Step 5 — Publish" icon="check-circle">
-    Click **Publish** (or **Save draft** to review later). Once processing finishes, your video is available on the site/app.
+- **Secure Encoding** — Videos can be encoded in an encrypted format during upload.
+- **Protected Playback** — Only authorized viewers can access and watch the content.
+- **Anti-Piracy** — Encrypted delivery prevents illegal downloads, screen scraping, and unauthorized sharing.
+- **Flexible Application** — Recommended for premium content. Promo or trailer videos can remain unencrypted.
 
-    ![](/images/topic-upload-video/05-publish.png)
+**Result:**
+Your content is securely delivered to end-users while minimizing piracy risks.
+
   </Accordion>
 
 </AccordionGroup>
 
 ### Tips
+
 - Large files: keep the browser tab open until the upload finishes.
 - Recommended formats: MP4 (H.264/AAC) for widest compatibility; AV1/H.265 if your audience devices support them.
 - If you see “CORS” or “Forbidden” errors during upload, verify the admin domain and API base URL for your tenant.

@@ -26,10 +26,17 @@
           {
             "group": "Topics",
             "pages": [
-              "topics/index",
-              "topics/how-to-upload-a-video"
+              "topics/how-to-upload-a-video",
+              "topics/edit_content",
+              "topics/video-license",
+              "topics/user-interface",
+              "topics/plans",
+              "topics/advertisement"
             ]
+            
+            
           }
+          
         ]
       },
       {

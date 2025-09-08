@@ -1,0 +1,206 @@
+---
+title: "Flexible Monetization Models"
+description: "**Description:** Supports various monetization strategies, including SVOD (Subscription Video on Demand), TVOD (Transactional Video on Demand), AVOD (Advertising Video on Demand), Offers, Redemptions, and Top-Ups."
+---
+
+<AccordionGroup>
+
+  <Accordion title="SVOD (Subscription Video on Demand) " icon="wallet">
+  **SVOD** allows users to access content by subscribing to a plan. Instead of paying for each video, subscribers get unlimited access to all content covered under their subscription package.
+
+**Key Features:**
+
+- **Recurring Payments** — Users are billed periodically (monthly, yearly, etc.).
+- **Unlimited Access** — Subscribers can watch all content available under the plan.
+- **Flexible Plans** — Admin can create different tiers (e.g., Basic, Premium).
+
+<Accordion title="Content Consumption" icon="star">
+The **Content Consumption** feature allows you to define **where** and **how** your content can be played.  
+This includes both **device restrictions** and **user categories**.
+
+**Key Controls:**
+
+- **Devices** — Specify the devices where content is allowed to play (e.g., Web, Android, Android TV
+  , Fire TV , iOS (Iphone/IPAD/Apple Tv)).
+
+![](/images/Consumption.png)
+
+</Accordion>
+<Accordion title="User Categories" icon="star">
+User categories define how different types of users interact with your **plan**.  
+These categories help you control access, monetization, and personalization.
+
+**Key Controls:**
+
+**Available Categories:**
+
+1. **Unregistered** — Visitors who have not created an account.
+2. **Registered** — Users who have signed up but do not have an active subscription or purchase.
+3. **Subscribed** — Users with an active subscription (SVOD).
+4. **Transaction Purchased** — Users who have purchased individual content through TVOD.
+5. **Churned** — Users who previously subscribed but have canceled or allowed their subscription to expire.
+
+![](/images/user-category.png)
+
+  </Accordion>
+  <Accordion title="Simultaneous Streams" icon="star">
+The **Simultaneous Streams** setting allows you to control how many devices a single user account can use to watch content at the same time. This helps prevent account sharing and ensures fair usage.
+
+**Key Options:**
+
+- **Stream Limit** — Set the maximum number of concurrent streams per account.
+- **Device Management** — Users may be prompted to manage or remove devices if the limit is reached.
+- **Plan-Based Rules** — Different subscription plans can have different stream limits (e.g., 1 device for Basic, 2 devices for Premium).
+
+</Accordion>
+
+<Accordion title="Connected Devices" icon="star">
+The **Connected Devices** feature lets you manage how many devices a user can link to their account for streaming.  
+This ensures better control over account usage and prevents excessive device sharing.
+
+**Key Features:**
+
+- **Device Limit** — Set the maximum number of devices a user can connect under their account.
+- **Device Registration** — Users must register each device before accessing content.
+- **Device Management** — Users can view and remove connected devices from their account.
+- **Security Control** — Helps prevent unauthorized device access.
+
+</Accordion>
+
+<Accordion title="Plan Setup — Country Selection" icon="star">
+In the **Plan Setup** section, you can configure how your plans appear and function across countries, devices, ads, and features.  
+This ensures that each plan is tailored for regional availability, user categories, and marketing clarity.
+
+**Key Options in Plan Setup:**
+
+- **Add Countries** — Select one or more countries where the plan will be shown.
+- **Regional Pricing** — Configure plan prices based on the country’s currency and market.
+- **Availability Control** — Decide which regions can view and purchase the plan.
+- **Supported Devices** — Define which devices (Web, Mobile, Smart TV, OTT apps) are supported.
+- **Include Ads** — Configure which user categories will see specific advertisements via ad arrangements.
+- **Features List** — Add and customize plan features (e.g., HD Streaming, Ad-Free, Offline Download) that will be displayed on the plan card for users to compare.
+
+![](/images/plan-setup.png)
+
+</Accordion>
+
+</Accordion>
+
+<Accordion title="TVOD (Transactional Video on Demand)" icon="wallet">
+In the **Plan Setup** section, you can configure how your plans appear and function across countries, devices, ads, and features.  
+This ensures that each plan is tailored for regional availability, user categories, and marketing clarity.
+
+**Key Options in Plan Setup:**
+
+- **Add Countries** — Select one or more countries where the plan will be shown.
+- **Regional Pricing** — Configure plan prices based on the country’s currency and market.
+- **Availability Control** — Decide which regions can view and purchase the plan.
+- **Supported Devices** — Define which devices (Web, Mobile, Smart TV, OTT apps) are supported.
+- **Include Ads** — Configure which user categories will see specific advertisements via ad arrangements.
+- **Features List** — Add and customize plan features (e.g., HD Streaming, Ad-Free, Offline Download) that will be displayed on the plan card for users to compare.
+
+![](/images/plan-setusp.png)
+
+</Accordion>
+
+<Accordion title="AVOD (Advertising Video on Demand)" icon="wallet">
+**AVOD** allows users to access content **for free**, with revenue generated through advertisements.  
+With **country-based AVOD**, you can control where ad-supported content is available, helping you comply with regional regulations and optimize ad revenue.
+
+**Key Features:**
+
+- **Ad-Supported Content** — Users watch content without paying, while ads are displayed during playback.
+- **Country Selection** — Enable or restrict AVOD content in specific countries.
+- **Flexible Ad Placement** — Configure pre-roll, mid-roll, or post-roll ads.
+- **User Category Targeting** — Select which user categories see specific ads (Registered, Subscribed, Transaction Purchased, Churned, Unregistered).
+- **Regional Monetization** — Apply different ad rules and arrangements per country.
+- **Integration with Monetization Plans** — Can be combined with SVOD or TVOD for hybrid monetization.
+
+**Use Case:**
+
+- Free ad-supported movies in select countries (e.g.,INDIA, US, UK).
+- Promotional content targeted to specific regions.
+- Restrict AVOD content in countries without ad agreements.
+
+![](/images/plan-setusp.png)
+
+</Accordion>
+<Accordion title="Offers" icon={<img src="/images/Offers.png" alt="Offers" style={{ width: '20px', height: '20px' }} />}>
+
+### Offers
+
+The **Offers** section allows you to create promotions for your content or plans.  
+There are **two types of offers**:
+
+- **Offer** — A standard promotional offer that provides discounts or benefits to users automatically.
+- **Redemption** — A user-specific offer that must be redeemed using a code.
+
+**Key Features:**
+
+- **Flexible Discounting** — Apply percentage or fixed amount discounts.
+- **Plan or Content Specific** — Offers can be applied to specific plans or content.
+- **Time-Bound** — Set start and expiry dates for the offer.
+
+<Accordion title="Offer" icon="rocket">
+
+### Offers
+
+An **Offer** is a promotional discount applied to a plan. Users can either automatically receive the discount or enter a promo code to avail it.
+
+**Key Features:**
+
+- **Automatic Application** — Users automatically receive or enter a promo code to avail the discount.
+- **Flexible Discounting** — Apply percentage or fixed amount discounts.
+- **Plan Specific** — Need to be linked to specific plans.
+
+**Offer Types:**
+
+1. **Fixed Amount** — Deduct a specific amount from the plan.
+2. **Percentage** — Deduct a percentage of the plan.
+
+**Offer Limit:**
+
+- **Limited** — The offer can be used a set number of times or by a limited number of users.
+- **Unlimited** — The offer can be used by all eligible users without restriction.
+
+</Accordion>
+
+<Accordion title="Redemption" icon="Gift">
+
+A **Redemption** allows a user to redeem a **promo code** to access a specific plan **without paying**.  
+This is useful for trials, special promotions, or reward-based access.
+
+**Key Features:**
+
+- **Free Plan Access** — Users can unlock a plan using a redemption code without making a payment.
+- **User-Specific** — Only users with a valid code can redeem the offer.
+- **Plan-Specific** — The code applies only to the designated plan.
+- **Limited or Unlimited** — Control how many users can redeem the code.
+
+</Accordion>
+
+</Accordion>
+
+<Accordion title="Top-Up" icon="tv">
+
+A **Top-Up** is an add-on feature that works **in combination with an active SVOD plan**.  
+It gives access to special content for a limited time, but its validity is always tied to the subscription.
+
+**How It Works:**
+
+- You must have an **active subscription plan (SVOD)** to purchase and use a top-up.
+- If a content requires a **10-day top-up**, you need to buy that top-up to access it.
+- If your subscription **expires before the top-up validity**, the top-up will also end.
+  - Example: Subscription expires in 5 days → 10-day top-up will only work for 5 days.
+- Top-ups cannot be used without an active SVOD subscription.
+
+**Key Features:**
+
+- **Subscription-Dependent** — Always linked to an active SVOD plan.
+- **Content-Specific** — Unlocks exclusive or premium content.
+- **Limited Duration** — Works only within the subscription’s validity period.
+- **Monetization Flexibility** — Allows charging extra for premium content inside SVOD.
+
+</Accordion>
+
+</AccordionGroup>
