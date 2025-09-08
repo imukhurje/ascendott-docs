@@ -456,90 +456,307 @@
                 "examples": {
                   "sample": {
                     "value": [
-                      {
-                        "title": "Ajo Take Mone Pore",
-                        "type": "video",
-                        "categories": [],
-                        "tags": [],
-                        "casting": {},
-                        "rating": "u/a7+",
-                        "images": {
-                          "img_32_9": "contents/1727762549931_aB8TihTsNEOsolSk/images/qsk83N-1727933156484.jpg",
-                          "img_16_9": "contents/1727762549931_aB8TihTsNEOsolSk/images/TJpNf4-1727933159928.jpg",
-                          "img_9_16": "contents/1727762549931_aB8TihTsNEOsolSk/images/kA40gl-1727933162423.jpg",
-                          "img_1_1": "contents/1727762549931_aB8TihTsNEOsolSk/images/PSSP8J-1727933164568.jpg",
-                          "img_3_4": "contents/1727762549931_aB8TihTsNEOsolSk/images/AfW663-1727933166401.jpg",
-                          "img_4_3": "contents/1727762549931_aB8TihTsNEOsolSk/images/i2cOdp-1739768096264.jpg"
-                        }
-                      },
-                      {
-                        "title": "Elokeshe",
-                        "type": "video",
-                        "categories": [],
-                        "tags": [],
-                        "casting": {},
-                        "rating": "u/a7+",
-                        "images": {
-                          "img_32_9": "contents/1727765364354_j5lecoAAlvGe5VtB/images/MZms36-1727934730302.jpg",
-                          "img_16_9": "contents/1727765364354_j5lecoAAlvGe5VtB/images/vW3SQK-1727934737624.jpg",
-                          "img_9_16": "contents/1727765364354_j5lecoAAlvGe5VtB/images/TH0B1U-1727934733917.jpg",
-                          "img_1_1": "contents/1727765364354_j5lecoAAlvGe5VtB/images/AP6Z9j-1727934739273.png",
-                          "img_3_4": "contents/1727765364354_j5lecoAAlvGe5VtB/images/8bPsJG-1727934735704.jpg",
-                          "img_4_3": "contents/1727765364354_j5lecoAAlvGe5VtB/images/i8yvUc-1739768626072.jpg"
-                        }
-                      },
-                      {
-                        "title": "Jamunar Teere",
-                        "type": "video",
-                        "categories": [],
-                        "tags": [],
-                        "casting": {},
-                        "rating": "u/a7+",
-                        "images": {
-                          "img_32_9": "contents/1727767562906_sfJHrNt0UfTzT2RK/images/E6m1b4-1727937708522.png",
-                          "img_16_9": "contents/1727767562906_sfJHrNt0UfTzT2RK/images/QQjMQb-1727937712389.jpg",
-                          "img_9_16": "contents/1727767562906_sfJHrNt0UfTzT2RK/images/gCC0WD-1727937714234.jpg",
-                          "img_1_1": "contents/1727767562906_sfJHrNt0UfTzT2RK/images/gTkeO6-1727937717688.jpg",
-                          "img_3_4": "contents/1727767562906_sfJHrNt0UfTzT2RK/images/L3yg9S-1727937716107.jpg",
-                          "img_4_3": "contents/1727767562906_sfJHrNt0UfTzT2RK/images/Fng3kL-1740546795699.jpg"
-                        }
-                      },
-                      {
-                        "title": "Jao Hey Shyam",
-                        "type": "video",
-                        "categories": [],
-                        "tags": [],
-                        "casting": {},
-                        "rating": "u/a7+",
-                        "images": {
-                          "img_32_9": "contents/1727769162186_NKBvAZWusjDY9wIo/images/7uqEyS-1727937958577.jpg",
-                          "img_16_9": "contents/1727769162186_NKBvAZWusjDY9wIo/images/ZW4Hem-1727937961485.jpg",
-                          "img_9_16": "contents/1727769162186_NKBvAZWusjDY9wIo/images/j0lLCA-1727937962945.jpg",
-                          "img_1_1": "contents/1727769162186_NKBvAZWusjDY9wIo/images/aIG0Ls-1727937966917.jpg",
-                          "img_3_4": "contents/1727769162186_NKBvAZWusjDY9wIo/images/ECll79-1727937964332.jpg",
-                          "img_4_3": "contents/1727769162186_NKBvAZWusjDY9wIo/images/vWeKBb-1740555218683.jpg"
-                        }
-                      },
-                      {
-                        "title": "Mono Aji",
-                        "type": "video",
-                        "categories": [],
-                        "tags": [],
-                        "casting": {},
-                        "rating": "u",
-                        "images": {
-                          "img_32_9": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/er8bOy-1727940845627.jpg",
-                          "img_16_9": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/x4nyRM-1727940849744.jpg",
-                          "img_9_16": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/xtIyC2-1750858707444.jpg",
-                          "img_9_16_md": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/Ly9B63-1750858712218.jpg",
-                          "img_9_16_sm": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/pYKfuH-1750858716131.jpg",
-                          "img_9_16_xs": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/RG79It-1750858719634.jpg",
-                          "img_1_1": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/840SMW-1727940854116.jpg",
-                          "img_3_4": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/pAfhsB-1727940855849.jpg",
-                          "img_4_3": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/x7zuRl-1740998017670.jpg"
-                        }
-                      }
-                    ]
+    {
+        "contentId": "66fb907f70381480c75da8cc",
+        "title": "Ajo Take Mone Pore",
+        "type": "video",
+        "categories": [
+            {
+                "id": "BRGV2k",
+                "title": "Bengali Songs"
+            }
+        ],
+        "tags": [
+            {
+                "id": "aeFFVV",
+                "title": "Bengali songs"
+            }
+        ],
+        "hlsHdUrl": "https://d85wz1yjbsfez.cloudfront.net/contents/1727762549931_aB8TihTsNEOsolSk/hls/1727762549931_aB8TihTsNEOsolSk-HD-pl.m3u8",
+        "hlsSdUrl": "https://d85wz1yjbsfez.cloudfront.net/contents/1727762549931_aB8TihTsNEOsolSk/hls/1727762549931_aB8TihTsNEOsolSk-SD-pl.m3u8",
+        "castAndCrew": [
+            {
+                "id": "66fe2d518a7760be21ff9068",
+                "name": "Taishi Nandi",
+                "role": "Singer",
+                "imageUrl": "https://d85wz1yjbsfez.cloudfront.net/cast_n_crew/LN8xRD-1727933775943.jpg"
+            },
+            {
+                "id": "66fd023b02c64a49b9e121be",
+                "name": "Ritam Sen",
+                "role": "Director",
+                "imageUrl": "https://d85wz1yjbsfez.cloudfront.net/cast_n_crew/hkiiYV-1727857209452.png"
+            }
+        ],
+        "rating": "u/a7+",
+        "images": {
+            "img_32_9": "https://d85wz1yjbsfez.cloudfront.net/contents/1727762549931_aB8TihTsNEOsolSk/images/qsk83N-1727933156484.jpg",
+            "img_32_9_md": null,
+            "img_32_9_sm": null,
+            "img_32_9_xs": null,
+            "img_16_9": "https://d85wz1yjbsfez.cloudfront.net/contents/1727762549931_aB8TihTsNEOsolSk/images/TJpNf4-1727933159928.jpg",
+            "img_16_9_md": null,
+            "img_16_9_sm": null,
+            "img_16_9_xs": null,
+            "img_9_16": "https://d85wz1yjbsfez.cloudfront.net/contents/1727762549931_aB8TihTsNEOsolSk/images/kA40gl-1727933162423.jpg",
+            "img_9_16_md": null,
+            "img_9_16_sm": null,
+            "img_9_16_xs": null,
+            "img_1_1": "https://d85wz1yjbsfez.cloudfront.net/contents/1727762549931_aB8TihTsNEOsolSk/images/PSSP8J-1727933164568.jpg",
+            "img_1_1_md": null,
+            "img_1_1_sm": null,
+            "img_1_1_xs": null,
+            "img_3_4": "https://d85wz1yjbsfez.cloudfront.net/contents/1727762549931_aB8TihTsNEOsolSk/images/AfW663-1727933166401.jpg",
+            "img_3_4_md": null,
+            "img_3_4_sm": null,
+            "img_3_4_xs": null,
+            "img_4_3": "https://d85wz1yjbsfez.cloudfront.net/contents/1727762549931_aB8TihTsNEOsolSk/images/i2cOdp-1739768096264.jpg",
+            "img_4_3_md": null,
+            "img_4_3_sm": null,
+            "img_4_3_xs": null
+        }
+    },
+    {
+        "contentId": "66fb9b8970381480c75daaa3",
+        "title": "Elokeshe",
+        "type": "video",
+        "categories": [
+            {
+                "id": "BRGV2k",
+                "title": "Bengali Songs"
+            }
+        ],
+        "tags": [
+            {
+                "id": "aeFFVV",
+                "title": "Bengali songs"
+            }
+        ],
+        "hlsHdUrl": "https://d85wz1yjbsfez.cloudfront.net/contents/1727765364354_j5lecoAAlvGe5VtB/hls/1727765364354_j5lecoAAlvGe5VtB-HD-pl.m3u8",
+        "hlsSdUrl": "https://d85wz1yjbsfez.cloudfront.net/contents/1727765364354_j5lecoAAlvGe5VtB/hls/1727765364354_j5lecoAAlvGe5VtB-SD-pl.m3u8",
+        "castAndCrew": [
+            {
+                "id": "66fe31e88a7760be21ff9342",
+                "name": "Soumyadeep Sikdar",
+                "role": "Singer",
+                "imageUrl": "https://d85wz1yjbsfez.cloudfront.net/cast_n_crew/dD6AmK-1727934950578.jpg"
+            },
+            {
+                "id": "66fd023b02c64a49b9e121be",
+                "name": "Ritam Sen",
+                "role": "Director",
+                "imageUrl": "https://d85wz1yjbsfez.cloudfront.net/cast_n_crew/hkiiYV-1727857209452.png"
+            }
+        ],
+        "rating": "u/a7+",
+        "images": {
+            "img_32_9": "https://d85wz1yjbsfez.cloudfront.net/contents/1727765364354_j5lecoAAlvGe5VtB/images/MZms36-1727934730302.jpg",
+            "img_32_9_md": null,
+            "img_32_9_sm": null,
+            "img_32_9_xs": null,
+            "img_16_9": "https://d85wz1yjbsfez.cloudfront.net/contents/1727765364354_j5lecoAAlvGe5VtB/images/vW3SQK-1727934737624.jpg",
+            "img_16_9_md": null,
+            "img_16_9_sm": null,
+            "img_16_9_xs": null,
+            "img_9_16": "https://d85wz1yjbsfez.cloudfront.net/contents/1727765364354_j5lecoAAlvGe5VtB/images/TH0B1U-1727934733917.jpg",
+            "img_9_16_md": null,
+            "img_9_16_sm": null,
+            "img_9_16_xs": null,
+            "img_1_1": "https://d85wz1yjbsfez.cloudfront.net/contents/1727765364354_j5lecoAAlvGe5VtB/images/AP6Z9j-1727934739273.png",
+            "img_1_1_md": null,
+            "img_1_1_sm": null,
+            "img_1_1_xs": null,
+            "img_3_4": "https://d85wz1yjbsfez.cloudfront.net/contents/1727765364354_j5lecoAAlvGe5VtB/images/8bPsJG-1727934735704.jpg",
+            "img_3_4_md": null,
+            "img_3_4_sm": null,
+            "img_3_4_xs": null,
+            "img_4_3": "https://d85wz1yjbsfez.cloudfront.net/contents/1727765364354_j5lecoAAlvGe5VtB/images/i8yvUc-1739768626072.jpg",
+            "img_4_3_md": null,
+            "img_4_3_sm": null,
+            "img_4_3_xs": null
+        }
+    },
+    {
+        "contentId": "66fba41d70381480c75dabfc",
+        "title": "Jamunar Teere",
+        "type": "video",
+        "categories": [
+            {
+                "id": "BRGV2k",
+                "title": "Bengali Songs"
+            }
+        ],
+        "tags": [
+            {
+                "id": "aeFFVV",
+                "title": "Bengali songs"
+            }
+        ],
+        "hlsHdUrl": "https://d85wz1yjbsfez.cloudfront.net/contents/1727767562906_sfJHrNt0UfTzT2RK/hls/1727767562906_sfJHrNt0UfTzT2RK-HD-pl.m3u8",
+        "hlsSdUrl": "https://d85wz1yjbsfez.cloudfront.net/contents/1727767562906_sfJHrNt0UfTzT2RK/hls/1727767562906_sfJHrNt0UfTzT2RK-SD-pl.m3u8",
+        "castAndCrew": [],
+        "rating": "u/a7+",
+        "images": {
+            "img_32_9": "https://d85wz1yjbsfez.cloudfront.net/contents/1727767562906_sfJHrNt0UfTzT2RK/images/E6m1b4-1727937708522.png",
+            "img_32_9_md": null,
+            "img_32_9_sm": null,
+            "img_32_9_xs": null,
+            "img_16_9": "https://d85wz1yjbsfez.cloudfront.net/contents/1727767562906_sfJHrNt0UfTzT2RK/images/QQjMQb-1727937712389.jpg",
+            "img_16_9_md": null,
+            "img_16_9_sm": null,
+            "img_16_9_xs": null,
+            "img_9_16": "https://d85wz1yjbsfez.cloudfront.net/contents/1727767562906_sfJHrNt0UfTzT2RK/images/gCC0WD-1727937714234.jpg",
+            "img_9_16_md": null,
+            "img_9_16_sm": null,
+            "img_9_16_xs": null,
+            "img_1_1": "https://d85wz1yjbsfez.cloudfront.net/contents/1727767562906_sfJHrNt0UfTzT2RK/images/gTkeO6-1727937717688.jpg",
+            "img_1_1_md": null,
+            "img_1_1_sm": null,
+            "img_1_1_xs": null,
+            "img_3_4": "https://d85wz1yjbsfez.cloudfront.net/contents/1727767562906_sfJHrNt0UfTzT2RK/images/L3yg9S-1727937716107.jpg",
+            "img_3_4_md": null,
+            "img_3_4_sm": null,
+            "img_3_4_xs": null,
+            "img_4_3": "https://d85wz1yjbsfez.cloudfront.net/contents/1727767562906_sfJHrNt0UfTzT2RK/images/Fng3kL-1740546795699.jpg",
+            "img_4_3_md": null,
+            "img_4_3_sm": null,
+            "img_4_3_xs": null
+        }
+    },
+    {
+        "contentId": "66fbaa6370381480c75dacfc",
+        "title": "Jao Hey Shyam",
+        "type": "video",
+        "categories": [
+            {
+                "id": "BRGV2k",
+                "title": "Bengali Songs"
+            }
+        ],
+        "tags": [
+            {
+                "id": "aeFFVV",
+                "title": "Bengali songs"
+            }
+        ],
+        "hlsHdUrl": "https://d85wz1yjbsfez.cloudfront.net/contents/1727769162186_NKBvAZWusjDY9wIo/hls/1727769162186_NKBvAZWusjDY9wIo-HD-pl.m3u8",
+        "hlsSdUrl": "https://d85wz1yjbsfez.cloudfront.net/contents/1727769162186_NKBvAZWusjDY9wIo/hls/1727769162186_NKBvAZWusjDY9wIo-SD-pl.m3u8",
+        "castAndCrew": [
+            {
+                "id": "66fe3f748a7760be21ff980c",
+                "name": "Neela Mukherjee",
+                "role": "Singer",
+                "imageUrl": "https://d85wz1yjbsfez.cloudfront.net/cast_n_crew/94WKbj-1727938418651.jpg"
+            },
+            {
+                "id": "66fd023b02c64a49b9e121be",
+                "name": "Ritam Sen",
+                "role": "Director",
+                "imageUrl": "https://d85wz1yjbsfez.cloudfront.net/cast_n_crew/hkiiYV-1727857209452.png"
+            }
+        ],
+        "rating": "u/a7+",
+        "images": {
+            "img_32_9": "https://d85wz1yjbsfez.cloudfront.net/contents/1727769162186_NKBvAZWusjDY9wIo/images/7uqEyS-1727937958577.jpg",
+            "img_32_9_md": null,
+            "img_32_9_sm": null,
+            "img_32_9_xs": null,
+            "img_16_9": "https://d85wz1yjbsfez.cloudfront.net/contents/1727769162186_NKBvAZWusjDY9wIo/images/ZW4Hem-1727937961485.jpg",
+            "img_16_9_md": null,
+            "img_16_9_sm": null,
+            "img_16_9_xs": null,
+            "img_9_16": "https://d85wz1yjbsfez.cloudfront.net/contents/1727769162186_NKBvAZWusjDY9wIo/images/j0lLCA-1727937962945.jpg",
+            "img_9_16_md": null,
+            "img_9_16_sm": null,
+            "img_9_16_xs": null,
+            "img_1_1": "https://d85wz1yjbsfez.cloudfront.net/contents/1727769162186_NKBvAZWusjDY9wIo/images/aIG0Ls-1727937966917.jpg",
+            "img_1_1_md": null,
+            "img_1_1_sm": null,
+            "img_1_1_xs": null,
+            "img_3_4": "https://d85wz1yjbsfez.cloudfront.net/contents/1727769162186_NKBvAZWusjDY9wIo/images/ECll79-1727937964332.jpg",
+            "img_3_4_md": null,
+            "img_3_4_sm": null,
+            "img_3_4_xs": null,
+            "img_4_3": "https://d85wz1yjbsfez.cloudfront.net/contents/1727769162186_NKBvAZWusjDY9wIo/images/vWeKBb-1740555218683.jpg",
+            "img_4_3_md": null,
+            "img_4_3_sm": null,
+            "img_4_3_xs": null
+        }
+    },
+    {
+        "contentId": "66fbb8af70381480c75daf52",
+        "title": "Mono Aji",
+        "type": "video",
+        "categories": [
+            {
+                "id": "BRGV2k",
+                "title": "Bengali Songs"
+            }
+        ],
+        "tags": [
+            {
+                "id": "aeFFVV",
+                "title": "Bengali songs"
+            }
+        ],
+        "hlsHdUrl": "https://d85wz1yjbsfez.cloudfront.net/contents/1727772767945_qIqXP8pJJzTry8Wt/hls/1727772767945_qIqXP8pJJzTry8Wt-HD-pl.m3u8",
+        "hlsSdUrl": "https://d85wz1yjbsfez.cloudfront.net/contents/1727772767945_qIqXP8pJJzTry8Wt/hls/1727772767945_qIqXP8pJJzTry8Wt-SD-pl.m3u8",
+        "castAndCrew": [
+            {
+                "id": "66fcfae250c97d41fddac770",
+                "name": "Lagnajita",
+                "role": "Singer",
+                "imageUrl": "https://d85wz1yjbsfez.cloudfront.net/cast_n_crew/HxgfY7-1727855324142.png"
+            },
+            {
+                "id": "66fd023b02c64a49b9e121be",
+                "name": "Ritam Sen",
+                "role": "Director",
+                "imageUrl": "https://d85wz1yjbsfez.cloudfront.net/cast_n_crew/hkiiYV-1727857209452.png"
+            },
+            {
+                "id": "66fe31e88a7760be21ff9342",
+                "name": "Soumyadeep Sikdar",
+                "role": "Singer",
+                "imageUrl": "https://d85wz1yjbsfez.cloudfront.net/cast_n_crew/dD6AmK-1727934950578.jpg"
+            },
+            {
+                "id": "67036e6c3ab99c3acaf7073f",
+                "name": "Ayan Bakshi",
+                "role": "Director",
+                "imageUrl": "https://d85wz1yjbsfez.cloudfront.net/cast_n_crew/6rzEkM-1728278122854.jpg"
+            }
+        ],
+        "rating": "u",
+        "images": {
+            "img_32_9": "https://d85wz1yjbsfez.cloudfront.net/contents/1727772767945_qIqXP8pJJzTry8Wt/images/er8bOy-1727940845627.jpg",
+            "img_32_9_md": null,
+            "img_32_9_sm": null,
+            "img_32_9_xs": null,
+            "img_16_9": "https://d85wz1yjbsfez.cloudfront.net/contents/1727772767945_qIqXP8pJJzTry8Wt/images/x4nyRM-1727940849744.jpg",
+            "img_16_9_md": null,
+            "img_16_9_sm": null,
+            "img_16_9_xs": null,
+            "img_9_16": "https://d85wz1yjbsfez.cloudfront.net/contents/1727772767945_qIqXP8pJJzTry8Wt/images/xtIyC2-1750858707444.jpg",
+            "img_9_16_md": "https://d85wz1yjbsfez.cloudfront.net/contents/1727772767945_qIqXP8pJJzTry8Wt/images/Ly9B63-1750858712218.jpg",
+            "img_9_16_sm": "https://d85wz1yjbsfez.cloudfront.net/contents/1727772767945_qIqXP8pJJzTry8Wt/images/pYKfuH-1750858716131.jpg",
+            "img_9_16_xs": "https://d85wz1yjbsfez.cloudfront.net/contents/1727772767945_qIqXP8pJJzTry8Wt/images/RG79It-1750858719634.jpg",
+            "img_1_1": "https://d85wz1yjbsfez.cloudfront.net/contents/1727772767945_qIqXP8pJJzTry8Wt/images/840SMW-1727940854116.jpg",
+            "img_1_1_md": null,
+            "img_1_1_sm": null,
+            "img_1_1_xs": null,
+            "img_3_4": "https://d85wz1yjbsfez.cloudfront.net/contents/1727772767945_qIqXP8pJJzTry8Wt/images/pAfhsB-1727940855849.jpg",
+            "img_3_4_md": null,
+            "img_3_4_sm": null,
+            "img_3_4_xs": null,
+            "img_4_3": "https://d85wz1yjbsfez.cloudfront.net/contents/1727772767945_qIqXP8pJJzTry8Wt/images/x7zuRl-1740998017670.jpg",
+            "img_4_3_md": null,
+            "img_4_3_sm": null,
+            "img_4_3_xs": null
+        }
+    }
+]
+
                   }
                 }
               }
