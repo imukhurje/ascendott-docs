@@ -60,8 +60,8 @@
                         "planCode": "68b74fd80e51671c21e46913",
                         "planTitle": "Standard",
                         "planType": "svod",
-                        "description": "This is an invisible plan for Airtel",
-                        "identifier": "airtel_6months_399",
+                        "description": "This is an invisible plan for Aggre Gator Ltd.",
+                        "identifier": "aggre_6months_399",
                         "billingFrequency": {
                           "value": "months",
                           "is_recurring": false,
