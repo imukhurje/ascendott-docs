@@ -27,7 +27,8 @@
   ],
   "tags": [
     { "name": "Plans" },
-    { "name": "Subscriptions" }
+    { "name": "Subscriptions" },
+    { "name": "Catalogs" }
   ],
   "paths": {
     "/plans": {
@@ -437,6 +438,141 @@
           { "ApiKeyAuth": [] }
         ]
       }
+    },
+    "/catalog": {
+      "get": {
+        "tags": ["Catalogs"],
+        "summary": "List of available contents",
+        "description": "Returns the list of catalog contents available to the caller.",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/CatalogItem" }
+                },
+                "examples": {
+                  "sample": {
+                    "value": [
+                      {
+                        "title": "Ajo Take Mone Pore",
+                        "type": "video",
+                        "categories": [],
+                        "tags": [],
+                        "casting": {},
+                        "rating": "u/a7+",
+                        "images": {
+                          "img_32_9": "contents/1727762549931_aB8TihTsNEOsolSk/images/qsk83N-1727933156484.jpg",
+                          "img_16_9": "contents/1727762549931_aB8TihTsNEOsolSk/images/TJpNf4-1727933159928.jpg",
+                          "img_9_16": "contents/1727762549931_aB8TihTsNEOsolSk/images/kA40gl-1727933162423.jpg",
+                          "img_1_1": "contents/1727762549931_aB8TihTsNEOsolSk/images/PSSP8J-1727933164568.jpg",
+                          "img_3_4": "contents/1727762549931_aB8TihTsNEOsolSk/images/AfW663-1727933166401.jpg",
+                          "img_4_3": "contents/1727762549931_aB8TihTsNEOsolSk/images/i2cOdp-1739768096264.jpg"
+                        }
+                      },
+                      {
+                        "title": "Elokeshe",
+                        "type": "video",
+                        "categories": [],
+                        "tags": [],
+                        "casting": {},
+                        "rating": "u/a7+",
+                        "images": {
+                          "img_32_9": "contents/1727765364354_j5lecoAAlvGe5VtB/images/MZms36-1727934730302.jpg",
+                          "img_16_9": "contents/1727765364354_j5lecoAAlvGe5VtB/images/vW3SQK-1727934737624.jpg",
+                          "img_9_16": "contents/1727765364354_j5lecoAAlvGe5VtB/images/TH0B1U-1727934733917.jpg",
+                          "img_1_1": "contents/1727765364354_j5lecoAAlvGe5VtB/images/AP6Z9j-1727934739273.png",
+                          "img_3_4": "contents/1727765364354_j5lecoAAlvGe5VtB/images/8bPsJG-1727934735704.jpg",
+                          "img_4_3": "contents/1727765364354_j5lecoAAlvGe5VtB/images/i8yvUc-1739768626072.jpg"
+                        }
+                      },
+                      {
+                        "title": "Jamunar Teere",
+                        "type": "video",
+                        "categories": [],
+                        "tags": [],
+                        "casting": {},
+                        "rating": "u/a7+",
+                        "images": {
+                          "img_32_9": "contents/1727767562906_sfJHrNt0UfTzT2RK/images/E6m1b4-1727937708522.png",
+                          "img_16_9": "contents/1727767562906_sfJHrNt0UfTzT2RK/images/QQjMQb-1727937712389.jpg",
+                          "img_9_16": "contents/1727767562906_sfJHrNt0UfTzT2RK/images/gCC0WD-1727937714234.jpg",
+                          "img_1_1": "contents/1727767562906_sfJHrNt0UfTzT2RK/images/gTkeO6-1727937717688.jpg",
+                          "img_3_4": "contents/1727767562906_sfJHrNt0UfTzT2RK/images/L3yg9S-1727937716107.jpg",
+                          "img_4_3": "contents/1727767562906_sfJHrNt0UfTzT2RK/images/Fng3kL-1740546795699.jpg"
+                        }
+                      },
+                      {
+                        "title": "Jao Hey Shyam",
+                        "type": "video",
+                        "categories": [],
+                        "tags": [],
+                        "casting": {},
+                        "rating": "u/a7+",
+                        "images": {
+                          "img_32_9": "contents/1727769162186_NKBvAZWusjDY9wIo/images/7uqEyS-1727937958577.jpg",
+                          "img_16_9": "contents/1727769162186_NKBvAZWusjDY9wIo/images/ZW4Hem-1727937961485.jpg",
+                          "img_9_16": "contents/1727769162186_NKBvAZWusjDY9wIo/images/j0lLCA-1727937962945.jpg",
+                          "img_1_1": "contents/1727769162186_NKBvAZWusjDY9wIo/images/aIG0Ls-1727937966917.jpg",
+                          "img_3_4": "contents/1727769162186_NKBvAZWusjDY9wIo/images/ECll79-1727937964332.jpg",
+                          "img_4_3": "contents/1727769162186_NKBvAZWusjDY9wIo/images/vWeKBb-1740555218683.jpg"
+                        }
+                      },
+                      {
+                        "title": "Mono Aji",
+                        "type": "video",
+                        "categories": [],
+                        "tags": [],
+                        "casting": {},
+                        "rating": "u",
+                        "images": {
+                          "img_32_9": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/er8bOy-1727940845627.jpg",
+                          "img_16_9": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/x4nyRM-1727940849744.jpg",
+                          "img_9_16": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/xtIyC2-1750858707444.jpg",
+                          "img_9_16_md": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/Ly9B63-1750858712218.jpg",
+                          "img_9_16_sm": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/pYKfuH-1750858716131.jpg",
+                          "img_9_16_xs": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/RG79It-1750858719634.jpg",
+                          "img_1_1": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/840SMW-1727940854116.jpg",
+                          "img_3_4": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/pAfhsB-1727940855849.jpg",
+                          "img_4_3": "contents/1727772767945_qIqXP8pJJzTry8Wt/images/x7zuRl-1740998017670.jpg"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden — missing or invalid API key",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" },
+                "examples": {
+                  "missing": { "value": { "error": "x-api-key missing" } },
+                  "incorrect": { "value": { "error": "x-api-key is incorrect" } }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" },
+                "examples": {
+                  "error": { "value": { "error": "Internal Server Error" } }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          { "ApiKeyAuth": [] }
+        ]
+      }
     }
   },
   "components": {
@@ -465,10 +601,7 @@
           "startDate": { "type": "string", "format": "date" },
           "endDate": { "type": "string", "format": "date", "nullable": true },
           "noEndDate": { "type": "boolean" },
-          "contentIds": {
-            "type": "array",
-            "items": { "type": "string" }
-          },
+          "contentIds": { "type": "array", "items": { "type": "string" } },
           "countries": {
             "type": "array",
             "items": {
@@ -485,24 +618,10 @@
         "type": "object",
         "required": ["externalUserId", "planCode"],
         "properties": {
-          "externalUserId": {
-            "type": "string",
-            "description": "Aggregator's user identifier (stable across calls)."
-          },
-          "planCode": {
-            "type": "string",
-            "description": "AscendOTT planCode to subscribe to."
-          },
-          "startDate": {
-            "type": "string",
-            "format": "date-time",
-            "description": "UTC ISO8601. Optional. Defaults to current date/time."
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date-time",
-            "description": "UTC ISO8601. Optional. Defaults to plan duration."
-          },
+          "externalUserId": { "type": "string", "description": "Aggregator's user identifier (stable across calls)." },
+          "planCode": { "type": "string", "description": "AscendOTT planCode to subscribe to." },
+          "startDate": { "type": "string", "format": "date-time", "description": "UTC ISO8601. Optional. Defaults to current date/time." },
+          "endDate": { "type": "string", "format": "date-time", "description": "UTC ISO8601. Optional. Defaults to plan duration." },
           "device": {
             "type": "string",
             "description": "Origin device of the purchase. Optional.",
@@ -526,14 +645,7 @@
       },
       "Subscription": {
         "type": "object",
-        "required": [
-          "subscriptionId",
-          "externalUserId",
-          "planCode",
-          "startDate",
-          "endDate",
-          "status"
-        ],
+        "required": ["subscriptionId", "externalUserId", "planCode", "startDate", "endDate", "status"],
         "properties": {
           "subscriptionId": { "type": "string" },
           "externalUserId": { "type": "string" },
@@ -557,11 +669,35 @@
               "other"
             ]
           },
-          "status": {
-            "type": "string",
-            "enum": ["completed", "pending", "cancelled", "expired"]
-          }
+          "status": { "type": "string", "enum": ["completed", "pending", "cancelled", "expired"] }
         }
+      },
+      "CatalogItem": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "type": { "type": "string", "example": "video" },
+          "categories": { "type": "array", "items": { "type": "string" } },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "casting": { "type": "object", "additionalProperties": true },
+          "rating": { "type": "string", "example": "u/a7+" },
+          "images": {
+            "type": "object",
+            "properties": {
+              "img_32_9": { "type": "string" },
+              "img_16_9": { "type": "string" },
+              "img_9_16": { "type": "string" },
+              "img_9_16_md": { "type": "string" },
+              "img_9_16_sm": { "type": "string" },
+              "img_9_16_xs": { "type": "string" },
+              "img_1_1": { "type": "string" },
+              "img_3_4": { "type": "string" },
+              "img_4_3": { "type": "string" }
+            },
+            "additionalProperties": true
+          }
+        },
+        "required": ["title", "type", "images"]
       },
       "Error": {
         "type": "object",
